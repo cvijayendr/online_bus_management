@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Admin View </title>
+		<style>
+			div.container {
+				width: 100%;
+				border: 1px solid gray;
+			}
+			header, footer {
+				padding: 1em;
+				color: white;
+				background-color: black;
+				clear: left;
+				text-align: center;
+			}
+			marquee{
+				background-color: lightgreen;
+				height: 30px;
+				font-size: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+		 		<h1>ONLINE BUS REGISTRATION</h1>
+			</header><br>
+			<marquee style="color:red;"> NOTE: ADMIN ACCESS USE CAREFULLY  </marquee>
+			<br><br><center> <h1> Delete An Entry From Table </h1> </center><br><br>
+			<form action="http://localhost/DELETE.php" method="POST">
+				<center>
+				<table>
+					<tr>
+						<td>Table</td>
+						<td>ID</td>
+					</tr>
+				   <tr>
+						<td width="350">
+							<select name="TABLES">
+								<option value="Select">-----Select-----</option>
+								<option value="ADD">Admin Details</option>
+								<option value="BOD">Booking Details</option>
+								<option value="BUD">Bus Details</option>
+								<option value="DRD">Driver Details</option>
+								<option value="PSD">Passenger Details</option>
+								<option value="PTD">Payment Details</option>
+								<option value="CR">Cancel Reason</option>
+								<option value="SD">Schedule Details</option>
+							</select>
+						</td>
+						<td><input type="text" name="ID" width="50"></td>
+						<td> <input type="Submit" value="Delete" width="50"></td>
+					</tr>
+				</table>
+				</center>
+			</form>
+		<br><br><br><br><br><br><br><br><br><br><br>
+		<footer>Copyright &copy; C&D.com</footer>
+	</div>
+	</body>
+</html>

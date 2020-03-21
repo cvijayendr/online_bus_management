@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Admin View </title>
+		<style>
+			div.container {
+				width: 100%;
+				border: 1px solid gray;
+			}
+			header, footer {
+				padding: 1em;
+				color: white;
+				background-color: black;
+				clear: left;
+				text-align: center;
+			}
+			p {
+				font-family: verdana;
+				font-size: 20px;
+			}
+			article {
+				margin-left: 170px;
+				padding: 1em;
+				overflow: hidden;
+			}
+			marquee{
+				background-color: lightgreen;
+				height: 30px;
+				font-size: 25px;
+			}
+			#two{
+				height:3em;
+				width:15em;
+				color:lightyellow;
+				font-size:25px;
+				background-color:purple;	
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+		 		<h1>ONLINE BUS REGISTRATION</h1>
+			</header><br>
+			<marquee style="color:red;"> NOTE: ADMIN ACCESS USE CAREFULLY  </marquee>
+				<center>
+				<table>
+				   <tr>
+						<form action="ADD_UP.html" method="POST">
+						<td width="200" height="30" >
+							<br><input type="submit" id="two" value="ADD/UPDATE" name="ADUP">
+						</td>
+						</form>
+					</tr>
+					<tr>
+						<form action="DELETE.html" method="POST">
+						<td width="200" height="30" >
+							<br><input type="submit" id="two" value="DELETE" name="DEL">
+						</td>
+						</form>
+					</tr>
+					<tr>
+						<form action="VIEW_TABLES.html" method="POST">
+						<td width="200" height="30" >
+							<br><input type="submit" id="two" value="VIEW TABLES" name="VW">
+						</td>
+						</form>
+					</tr>
+					<tr>
+						<form action="MK_ADMIN.html" method="POST">
+						<td width="200" height="30" >
+							<br><input type="submit" id="two" value="ADD ADMIN" name="ADM">
+						</td>
+						</form>
+					</tr>
+				</table>
+				</center>
+			</form>
+		<br><br><br><br>
+		<footer>Copyright &copy; C&D.com</footer>
+	</div>
+	</body>
+</html>

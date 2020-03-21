@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Admin Login</title>
+		<style>
+			div.container {
+				width: 100%;
+				border: 1px solid gray;
+			}
+			header, footer {
+				padding: 1em;
+				color: white;
+				background-color: black;
+				clear: left;
+				text-align: center;
+			}
+			nav {
+				float:right;
+				max-width: 100%;
+				padding: 3em;
+			}
+			marquee{
+				background-color: lightgreen;
+				height: 30px;
+				color:red;
+				font-size: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+			   <h1>ONLINE BUS REGISTRATION</h1>
+			</header>
+			<br><marquee>NOTE: For ADMIN Use Only</marquee>
+			<nav>
+				<form action="http://localhost/ADMIN-LOGIN.php" method="POST">
+					<table>
+						<tr>
+							<td>Admin ID</td>
+							<td><input type="text" name="USNM"/></td>
+						</tr>
+						<tr>
+							<td> Password</td>
+							<td><input type="password" name="PWD"/></td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td>
+								<input type="Submit" name="LOGIN" width="50"/>
+								<input type="reset" value="Reset" width="50">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</nav>
+			<img src="/home/student/Desktop/ONLINE BUS RESERVATION/HTML/busp.png" height="250px" width="500px" alt="IMAGE NOT FOUND">
+			<br><br><br><br><br><br><br><br>
+			<footer>Copyright &copy; C&D.com</footer>
+		</div>
+	</body>
+</html>

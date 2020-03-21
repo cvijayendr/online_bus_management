@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: center;
+    text-align: center;
+}
+
+h3.one{
+	color:red;
+	background-color:lightgreen;
+}
+
+nav {
+    float:cenetre;
+    max-width: 100%;
+    padding: 5em;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+   <h1>ONLINE BUS REGISTRATION</h1>
+</header>
+<h3 class=one><marquee>NOTE:Once Cancelled ticket will be sold to other</marquee></h3>
+<nav>
+<form action="file:///C:/Users/admin/Desktop/BUS_RESERVATION/CANCEL_ALERT.html" method="post">
+	<b>BOOKING ID:</b><input type="text" size="10" name="bid"><br><br>
+	<b>REASON:</b><br><textarea rows="5" cols="50"></textarea><br><br>
+	<input type="submit" value="Submit" name="can_req" onclick="return confirm("CONFIRM TICKET CANCELLATION \n")/>
+</form>
+</nav>
+<footer>Copyright &copy; ASC_DK.com</footer>
+</div>
+</body>
+</html>

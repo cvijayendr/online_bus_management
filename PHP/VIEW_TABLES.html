@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Admin View </title>
+		<style>
+			div.container {
+				width: 100%;
+				border: 1px solid gray;
+			}
+			header, footer {
+				padding: 1em;
+				color: white;
+				background-color: black;
+				clear: left;
+				text-align: center;
+			}
+			p {
+				font-family: verdana;
+				font-size: 20px;
+			}
+			article {
+				margin-left: 170px;
+				padding: 1em;
+				overflow: hidden;
+			}
+			marquee{
+				background-color: lightgreen;
+				height: 30px;
+				font-size: 25px;
+			}
+			#two{
+				height:3em;
+				width:15em;
+				color:lightyellow;
+				font-size:25px;
+				background-color:purple;	
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+		 		<h1>ONLINE BUS REGISTRATION</h1>
+			</header><br>
+			<marquee style="color:red;"> NOTE: ADMIN ACCESS USE CAREFULLY  </marquee>
+			<br><br><center> <h1> Select Table To View </h1> </center><br><br>
+			<form action="http://localhost/VIEW.php" method="POST">
+				<center>
+				<table>
+				   <tr>
+						<td width="200" height="30" >TABLES</td>
+						<td width="350">
+							<select name="TABLES">
+								<option value="Select">-----Select-----</option>
+								<option value="ADD">Admin Details</option>
+								<option value="BOD">Booking Details</option>
+								<option value="BUD">Bus Details</option>
+								<option value="DRD">Driver Details</option>
+								<option value="PSD">Passenger Details</option>
+								<option value="PTD">Payment Details</option>
+								<option value="CR">Cancel Reason</option>
+								<option value="SD">Schedule Details</option>
+							</select>
+						</td>
+						<td> <input type="Submit" value="View" width="50"></td>
+					</tr>
+				</table>
+				</center>
+			</form>
+		<br><br><br><br><br><br><br>
+		<footer>Copyright &copy; C&D.com</footer>
+	</div>
+	</body>
+</html>

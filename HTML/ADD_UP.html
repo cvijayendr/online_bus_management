@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Admin View </title>
+		<style>
+			div.container {
+				width: 100%;
+				border: 1px solid gray;
+			}
+			header, footer {
+				padding: 1em;
+				color: white;
+				background-color: black;
+				clear: left;
+				text-align: center;
+			}
+			p {
+				font-family: verdana;
+				font-size: 20px;
+			}
+			article {
+				margin-left: 170px;
+				padding: 1em;
+				overflow: hidden;
+			}
+			marquee{
+				background-color: lightgreen;
+				height: 30px;
+				font-size: 25px;
+			}
+			#two{
+				height:3em;
+				width:15em;
+				color:lightyellow;
+				font-size:25px;
+				background-color:purple;	
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+		 		<h1>ONLINE BUS REGISTRATION</h1>
+			</header><br>
+			<marquee style="color:red;"> NOTE: Insert/Update One Table At a Time </marquee>
+			<br><center> <h1>Insert Data To Tables</h1> </center><br>
+			<form action="http://localhost/ADD_UP.php" method="POST">
+				<center>
+				<table>
+				   <tr width="350">
+						<td></td>
+						<td>Registration Number</td>
+						<td>Capacity</td>
+						<td>Bus Type</td>
+					</tr>
+				   <tr>
+						<td width="200" height="30"><b>Bus Details</b></td>
+						<td> <input type="text" name="REG_NO" width="50"></td>
+						<td> <input type="text" name="CAP" width="50"></td>
+						<td> <input type="text" name="TYPE" width="50"></td>
+						<td></td><td></td><td></td>
+						<td>
+							<input type="Submit" value="Insert" width="50">
+							<input type="Reset" value="Reset" width="50">
+						</td>
+					</tr><tr></tr>
+					<tr width="350">
+						<td></td>
+						<td>Bus ID</td>
+						<td>Name</td>
+						<td>Age</td>
+						<td>Salary</td>
+					</tr>
+				   <tr>
+						<td width="200" height="30"><b>Driver Details</b></td>
+						<td> <input type="text" name="BUS_ID" width="50"></td>
+						<td> <input type="text" name="NAME" width="50"></td>
+						<td> <input type="text" name="AGE" width="50"></td>
+						<td> <input type="text" name="SAL" width="50"></td>
+						<td></td><td></td>
+						<td>	
+							<input type="Submit" value="Insert" width="50">
+							<input type="Reset" value="Reset" width="50">
+						</td>
+					</tr><tr></tr>
+					<tr width="350">
+						<td></td>
+						<td>Bus ID</td>
+						<td>Arrive Time</td>
+						<td>Depart Time</td>
+						<td>Source</td>
+						<td>Destination</td>
+						<td>Amount</td>
+					</tr>
+				   <tr>
+						<td width="200" height="30"><b>Bus Details</b></td>
+						<td> <input type="text" name="BID" width="50"></td>
+						<td>
+							<select name="AHR">
+								<option value="Select">Hour</option>
+								<option value="00">00</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+							</select>
+							<select name="AMIN">
+								<option value="Select">Min</option>
+								<option value="00">00</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+								<option value="32">32</option>
+								<option value="33">33</option>
+								<option value="34">34</option>
+								<option value="35">35</option>
+								<option value="36">36</option>
+								<option value="37">37</option>
+								<option value="38">38</option>
+								<option value="39">39</option>
+								<option value="40">40</option>
+								<option value="41">41</option>
+								<option value="42">42</option>
+								<option value="43">43</option>
+								<option value="44">44</option>
+								<option value="45">45</option>
+								<option value="46">46</option>
+								<option value="47">47</option>
+								<option value="48">48</option>
+								<option value="49">49</option>
+								<option value="50">50</option>
+								<option value="51">51</option>
+								<option value="52">52</option>
+								<option value="53">53</option>
+								<option value="54">54</option>
+								<option value="55">55</option>
+								<option value="56">56</option>
+								<option value="57">57</option>
+								<option value="58">58</option>
+								<option value="59">59</option>
+						</td>
+						<td>
+							<select name="DHR">
+								<option value="Select">Hour</option>
+								<option value="00">00</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+							</select>
+							<select name="DMIN">
+								<option value="Select">Min</option>
+								<option value="00">00</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+								<option value="32">32</option>
+								<option value="33">33</option>
+								<option value="34">34</option>
+								<option value="35">35</option>
+								<option value="36">36</option>
+								<option value="37">37</option>
+								<option value="38">38</option>
+								<option value="39">39</option>
+								<option value="40">40</option>
+								<option value="41">41</option>
+								<option value="42">42</option>
+								<option value="43">43</option>
+								<option value="44">44</option>
+								<option value="45">45</option>
+								<option value="46">46</option>
+								<option value="47">47</option>
+								<option value="48">48</option>
+								<option value="49">49</option>
+								<option value="50">50</option>
+								<option value="51">51</option>
+								<option value="52">52</option>
+								<option value="53">53</option>
+								<option value="54">54</option>
+								<option value="55">55</option>
+								<option value="56">56</option>
+								<option value="57">57</option>
+								<option value="58">58</option>
+								<option value="59">59</option>
+						</td>
+						<td> <input type="text" name="SRC" width="50"></td>
+						<td> <input type="text" name="DST" width="50"></td>
+						<td> <input type="text" name="AMT" width="50"></td>
+						<td>
+							<input type="Submit" value="Insert" width="50">
+							<input type="Reset" value="Reset" width="50">
+						</td>
+					</tr>
+				</table>
+				</center>
+				<br><center> <h1>Update Data Of Tables</h1> </center><br>
+				<center>
+				<table>
+					<tr width="350">
+						<td width="200"><b>Salary</b></td>
+						<td>
+							<select name="IORD">
+								<option value="Select">-----Select-----</option>
+								<option value="INC">Increase</option>
+								<option value="DEC">Decrease</option>
+							</select>
+						</td>
+						<td> <input type="text" name="PER" width="50"></td>
+						<td>
+							<input type="Submit" value="Update" width="50">
+							<input type="Reset" value="Reset" width="50">
+						</td>
+					</tr>
+					<tr>
+						<td width="200"><b>Payment On Date</b></td>
+						<td width="350">
+							<select name="DAY">
+								<option value="Select">Day</option>							
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+							</select>
+							<select name="MONTH">
+								<option value="Select">Month</option>
+								<option value="01">Jan</option>
+								<option value="02">Feb</option>
+								<option value="03">Mar</option>
+								<option value="04">Apr</option>
+								<option value="05">May</option>
+								<option value="06">Jun</option>
+								<option value="07">Jul</option>
+								<option value="08">Aug</option>
+								<option value="09">Sep</option>
+								<option value="10">Oct</option>
+								<option value="11">Nov</option>
+								<option value="12">Dec</option>				
+							</select>
+							<select name="YEAR">
+								<option value="Select">Year</option>
+								<option value="2017">2017</option>
+								<option value="2018">2018</option>
+							</select>
+						</td><td></td>
+						<td>
+							<input type="Submit" value="Check" width="50">
+							<input type="Reset" value="Reset" width="50">
+						</td>
+					</tr>
+				</table>
+				</center>
+			</form>
+		<br><br><br><br><br><br><br>
+		<footer>Copyright &copy; C&D.com</footer>
+	</div>
+	</body>
+</html>
